@@ -1,65 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
 *{
 box-sizing: border-box;
+margin: 0;
 }
 body{
     background-image: url("./image/bg-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover ;
+    background-size: top ;
     background-color:  hsl(257, 40%, 49%);
     margin: 0;
     padding: 0;
-    position: relative;
-   
+    /* position: relative; */ 
 }
 .container{
     display: flex;
     /* justify-content: center;
     align-items: center; */
     flex-direction: column;
-    padding: 50px;
-    position: absolute;
-    gap: 100px;
-    
-   
+    padding: 20px;
+    /* position: absolute; */
+    gap: 35px;   
 }
-
 .logo{
-    
+    width: 130px; 
 }
-/* .imag {
-   display: block;
-   max-width: 100%;
-   height: auto;
-} */
+img { 
+   width: 100%; 
+}
+.big{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+p{
+    color: rgb(250, 225, 225);
+}
 .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 20px;
 }
 .content>h1{
     color: white;
     font-family: "Poppins";
-    font-size: 30px;
-
+    font-size: 18px;
 }
+
 .content>p{
     color: white;
-    font-size: 25px;
-    line-height: 1.5;
-    word-spacing: 3px;
-    letter-spacing: 2px;
+    font-size: 1rem;
     font-family: sans-serif;
     
 }
 .btn{
-    
     background-color: white;
-    width: 300px;
-    height: 60px;
+    width: 170px;
+    height: 30px;
     border-radius: 20px;
     color: hsl(257, 40%, 49%);
     font-size: 20px;
@@ -68,25 +68,28 @@ body{
     align-items: center;
 }
 .icon{
-    font-size: 40px;
+    font-size: 20px;
     display: flex;
     gap: 20px;
-    height: 70px;
-    width: 70px;
+    /* height: 70px;
+    width: 70px; */
     margin-top: 50px;
     justify-content: center;
     align-items: center;
     
 }
-.fab{
+.social{
     color: white;
+}
+.social-container {
     border: 1px solid white;
+    padding: 5px;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height:40px;
+    width: 40px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 @media screen and (min-width: 768px) {
     body{
@@ -94,36 +97,59 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
     }
     .container{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-basis: 50% 50%;
+        gap: 30px;
+        /* padding: 45px; */
+        height: 100vh;
+       
+        margin: 40px;
     }
     .big{
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 80px;
         flex-basis: 50%;
-
+        height: 100vh;
     }
-   
-    
     .content{
         display: flex;
+       flex-basis: 50%;
+       justify-content: flex-start;
+       align-items: flex-start;
+       height: 100vh;
+         
+    }
+    /* h1{
+        line-height:1;
+    }
+    */
+    p{
+        font-size: 1rem;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
     .content>h1{
-        font-size: 30px;
+        font-size: 25px;    
     }
     .content>p{
-        font-size: 14px;
+        font-size: .7rem;
         line-height: normal;
         font-family: "figtree";
-
+        text-align: left;
     }
-   
-    
+    .icon{
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-end;
+       align-items: flex-end;
+       width: 100%;  
+    }   
 }
