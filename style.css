@@ -62,12 +62,12 @@ p{
 }
 .btn{
     background-color: white;
-    width: 170px;
-    padding: 10px 0;
-    border-radius: 20px;
+    width: 180px;
+    padding: 15px 0;
+    border-radius: 30px;
     border: none;
     color: hsl(257, 40%, 49%);
-    font-size: .8rem;
+    font-size: 1rem;
     box-shadow: 1px 8px 15px -4px rgba(0,0,0,0.5);
 }
 .icon{
